@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="index.html"><img src="/source/logo3.png" alt=""></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <h1 style="margin-left: 25px">Your Order!</h1>
+        <section class="order">
+            <div class="order-selected card">
+                <img class="image-store" src="" alt="">
+                <div class="element-information">
+                    <h2 class="title"></h2>
+                    <h3 class="price"></h3>
+                </div>
+            </div>
+            <div class="order-form">
+                <h2>Enter your data</h2>
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+                    <div class="order-data">
+                        <div>
+                            <label for="order">Data Order:</label>
+                        </div>
+                        <div>
+                            <input class="your-order input-group" type="text" name="order" id="order" value="" readonly>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="column-1">
+                            <div>
+                                <label for="first-name">First Name</label>
+                            </div>
+                            <div>
+                                <input type="text" name="first-name" id="first-name" required>
+                            </div>
+                            <div>
+                                <label for="last-name">Last Name</label>
+                            </div>
+                            <div>
+                                <input type="text" name="last-name" id="last-name" required>
+                            </div>
+                            <div>
+                                <label for="address">Address</label>
+                            </div>
+                            <div>
+                                <input type="text" name="address" id="address" required>
+                            </div>
+                            <div>
+                                <label for="address">Province</label>
+                            </div>
+                            <div>
+                                <input type="text" name="province" id="province" required>
+                            </div>
+                        </div>
+                        <div class="column-2">
+                            <div>
+                                <label for="address">Country</label>
+                            </div>
+                            <div>
+                                <input type="text" name="country" id="country" required>
+                            </div>
+                            <div>
+                                <label for="address">Dep/Floor</label>
+                            </div>
+                            <div>
+                                <input type="text" name="dep/floor" id="dep/floor">
+                            </div>
+                            <div>
+                                <label for="address">Mail</label>
+                            </div>
+                            <div>
+                                <input type="text" name="mail" id="mail" required>
+                            </div>
+                            <div>
+                                <label for="address">Phone</label>
+                            </div>
+                            <div>
+                                <input type="number" name="phone" id="phone" required>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <input class="btn-reset"type="reset" value="Reset">
+                        <input class="btn"type="submit" value="Order!">
+                </form>
+            </div> 
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div>
+                <h3>Direction</h3>
+                <p>
+                    Street 9000, Argentina
+                </p>
+            </div>
+            <div>
+                <h3>About us</h3>
+                <p>
+                    We are a health food store
+                </p>
+                <div id="socialMediaLogos">
+                    <h4>Social medias</h4>
+                    <div>
+                        <li><a href=""><img src="/source/facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="/source/instagram.png" alt=""></a></li>
+                        <li><a href=""><img src="/source/whatsapp.png" alt=""></a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="order.js"></script>
+</html>
